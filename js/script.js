@@ -1,94 +1,61 @@
-/////ВЛОЖЕННЫЕ ЦИКЛЫ/////
 
-/* for(let i = 0; i < 3; i++){
-    console.log(i);
-
-    for(let j = 4; j < 7; j++){
-        console.log(j);
+// Заполните новый массив (result) числами из старого (arr). Количество элементов в массиве можно получить как arr.length,
+// а к элементам обращаемся все так же: arr[0], arr[1] и тд.
+// Должен получиться точно такой же массив
+// Место для первой задачи
+/* function firstTask() {
+    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+    const arr = [3, 5, 8, 16, 20, 23, 50];
+    const result = [];
+    // Пишем решение вот тут
+    for(let i = 0; i < arr.length; i++){
+        result.push(arr[i])
     }
-}
+    
+    // Не трогаем
+    return result;
+} */
 
- */
 
-/////////////////EXERCISE WITH TREE////////////
-/* let result = '';
-const length = 7;
+// Измените данный массив так, чтобы все числа были увеличены в 2 раза, а если попадается строка строка - то к ней было добавлено " - done".
+// Для определения типа данных используйте typeof();
+// Должно получиться: [ 10, 20, 'Shopping - done', 40, 'Homework - done' ]
+// Место для второй задачи
 
-for(let i = 1; i < length; i++){
-
-    for(let j = 0; j < i; j++){
-        result += '*'
-    }
-
-    result += '\n';
-}
-console.log(result); */
-////////////////////////////////////
-
-///////Метки///////
-
-/* first : for(let i = 0; i < 3; i++){
-    console.log(`First level : ${i}`);
-
-    for(let j = 0; j < 3; j++){
-        console.log(`Second level : ${j}`);
-        
-        for(let k = 0; k < 5; k++){
-            if (k === 2) continue first;
-            console.log(`Third level : ${k}`);
+/*  function secondTask() {
+    const data = [5, 10, 'Shopping', 20, 'Homework'];
+    // Пишем решение вот тут
+    for(let i = 0; i < data.length; i++){
+        if(typeof data[i] === 'number'){
+            data[i] *= 2;
+        }else if (typeof data[i] === 'string'){
+            data[i] += ' - done'
         }
     }
+    //Не трогаем
+      console.log(data);
 }
+secondTask() 
  */
 
 
-///////////PRACTICE WITH CYCLES AND LABELS//////////////
 
-/* При помощи цикла выведите числа от 5 до 10 в консоль. 5 и 10 включительно. Цикл можно использовать любой
+// Разверните массив data наоборот при помощи цикла и запишите данные в массив result.
+// Должно получиться: [ 'Homework', 20, 'Shopping', 10, 5 ]
 
-При помощи цикла for вывести числа от 20 до 10 в консоль. В обратном порядке (20, 19, 18...). Когда цикл дойдет до числа 13 - остановить весь цикл
-
-При помощи цикла for выведите чётные числа от 2 до 10 включительно */
-
-//  for(let i = 5; i <= 10; i++){
-//     console.log(i);
-// } 
-
-// for(let i = 20; i >= 10; i--){
-//     if(i === 13){
-//         break
+// Место для третьей задачи
+// function thirdTask() {
+//     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+//     const data = [5, 10, 'Shopping', 20, 'Homework'];
+//     const result = [];
+//     for(let i = data.length-1; i >= 0; i--){
+//         result.push(data[i])
 //     }
-//     console.log(i);
-// }
-
-// for(let i = 2; i <= 10; i++){
-//     if(i % 2 === 0){
-//         console.log(i);
-//     }else{
-//         continue
-//     }
-// }
-
-
-
-
-// let i = 2
-// while(i <= 16){
+//     // Пишем решение вот тут
+//     console.log(result);
     
-//     if(i % 2 === 0){
-//         i++;
-//         continue
-//     }else{
-//         console.log(i);
-//     }
-//     i++
+//     // Не трогаем
+//     return result;
 // } 
 
-// let array = [];
-
-// for(let i = 5; i <= 10; i++){
-//     array.push(i)
-// }
-// console.log(array);
-
-
+// thirdTask()
